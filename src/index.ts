@@ -1,5 +1,1 @@
-import { getInput } from "@actions/core"
-
-const name = getInput("name");
-
-console.log(`Hello ${name}`)
+console.log(`Hello annshiv`)
