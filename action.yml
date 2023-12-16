@@ -2,34 +2,6 @@ name: "Deploy to Hostinger"
 description: "A GitHub Action for Hostinger deployment"
 author: "Annshiv"
 
-on:
-  push:
-    branches:
-      - main # The branch name your are commit the new changes
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: Build and Push
-    steps:
-      - name: git-checkout
-        uses: actions/checkout@v3
-
-      - name: Install all dependencies
-        run: npm install -f
-
-      - name: Build
-        run: npm run build # The build command of your project
-
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: build # The branch name where you want to push the assets
-          FOLDER: build # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
-
 branding:
   icon: 'activity'
   color: 'blue'
