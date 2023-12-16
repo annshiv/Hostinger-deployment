@@ -62,7 +62,7 @@ name: Generate a build and push to another branch
 on:
   push:
     branches:
-      - main 
+      - main # The branch name your are commit the new changes
 
 jobs:
   build:
