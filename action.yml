@@ -2,6 +2,12 @@ name: "Deploy to Hostinger"
 description: "A GitHub Action for Hostinger deployment"
 author: "Annshiv"
 
+input:
+  name:
+    description: "The name to say hello to"
+    required: true
+    default: "world"
+
 runs:
   using: "node20"
   main: "dist/index.js"
