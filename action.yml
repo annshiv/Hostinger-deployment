@@ -1,4 +1,6 @@
-name: Build and deploy
+name: "Deploy to Hostinger"
+description: "A GitHub Action for Hostinger deployment"
+author: "Annshiv"
 
 on:
   push:
