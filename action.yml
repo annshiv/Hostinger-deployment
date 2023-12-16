@@ -3,5 +3,5 @@ description: "A GitHub Action for Hostinger deployment"
 author: "Annshiv"
 
 runs:
-  using: "node20"
-  main: "dist/index.js"
+  using: "node16"
+  main: "lib/index.js"
