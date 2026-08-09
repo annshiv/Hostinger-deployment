@@ -1,3 +1,5 @@
+
+
 # Hostinger-deployment
 A GitHub Action for hostinger deployment
 
@@ -73,7 +75,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install all dependencies
-        run: npm install
+        run: npm install -f
 
       - name: Build
         run: npm run build # The build command of your project
